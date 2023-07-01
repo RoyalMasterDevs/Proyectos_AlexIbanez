@@ -1,0 +1,99 @@
+#container{
+    width: 785px;
+    margin: 0px auto; /* Marco que el margen sea cero para que de ahí llene el 80% del width de arriba */
+    border: 1px solid whitesmoke; /* Para ver el margen de mi container */
+}
+
+header{
+    background-color: purple;
+    background-image: url("../img/titulo3.jpg");
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    line-height: 100px;  /* Se iguala al height total del header para que contemple todo el ancho del mismo y lo 
+                            centre verticalmente*/
+    color: seashell;
+    border-bottom: 3px dashed whitesmoke;
+}
+
+main{
+    width: 770px;
+    height: 400px;
+    margin-left: 15px;
+    background-color: violet;
+    border-radius: 10px;
+}
+
+nav{
+    background-color: seashell;
+    width: 150px;
+    height: 340px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+section{
+    background-color: seashell;
+    width: 450px;
+    height: 340px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+#primero{
+    background-color: seagreen;
+    width: 440px;
+    height: 103px;
+    float: left;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+#segundo{
+    background-color: salmon;
+    width: 440px;
+    height: 103px;
+    float: left;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+#tercero{
+    background-color: palevioletred;
+    width: 440px;
+    height: 103px;
+    float: left;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+aside{
+    background-color: seashell;
+    width: 130px;
+    height: 340px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: purple;
+    color: seashell;
+    width: 770px;
+    height: 50px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }

@@ -5,30 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../Proyecto002_CSS/P001.css">
     <title>Formularios</title> 
 </head>
 
 <body>
-    <main>
-        <form action="" method="post">
-            <P>
-            <label for="nombre">Nombre: </label>
-                    <input type="text" id="nombre"
-                    <br>
-            <label for="apellido">Apellido: </label>
-                    <input type="text" id="apellido">
-                    <br>
-            <label for="comentarios">Comentarios: </label>
-                    <textarea name="comentarios" rows="4" cols="20"></textarea>
-                    <br>
-            <label for="password">Password: </label>
-                    <input type="password" id="email">
-                    <br>
-            <input type="submit" value="Enviar"> <input type="reset">
-            </P>
-        </form>
-    </main>
+    <div id="container">
+        <header>
+            <div>
+                <img src="../img/ajolote.png" width="98" alt="Logo">
+            </div>
+        </header>
+        <main>
+            <h1 style="background-color: #331863; color:seashell; text-align: center;">Formulario</h1>
+            <br>
+            <br>
+            <form action="" method="post">
+                <P>
+                <label for="nombre">Nombre: </label>
+                        <input type="text" id="nombre">
+                        <br>
+                <label for="apellido">Apellido: </label>
+                        <input type="text" id="apellido">
+                        <br>
+                <label>Sexo : </label>
+                        <select>
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                        </select>
+                        <br>
+                <label for="comentarios">Comentarios: </label>
+                        <textarea name="comentarios" rows="4" cols="20"></textarea>
+                        <br>
+                <label for="password">Password: </label>
+                        <input type="password" id="email">
+                        <br>
+                <input type="submit" value="Enviar"> <input type="reset">
+                </P>
+            </form>
+            <br>
+            <br>
+        </main>
+    </div>
 </body>
 
 </html>

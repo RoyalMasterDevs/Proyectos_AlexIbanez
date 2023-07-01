@@ -1,0 +1,131 @@
+/* * sirve para dar atributos a todos los elementos */
+*{
+    margin: 0px;
+    padding: 0px; /* Margen interior dentro de las cajas */
+}
+body{    
+    background: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container{
+    width: 80%; /*Ancho de la pantalla, necesita de un margen (abajo) como referencia */
+    margin: 0px auto; /* Marco que el margen sea cero para que de ahí llene el 80% del width de arriba */
+    border: 1px solid whitesmoke; /* Para ver el margen de mi container */
+}
+header{
+    background: red;
+    background-image: url("../img/titulo3.jpg");
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    line-height: 100px;  /* Se iguala al height total del header para que contemple todo el ancho del mismo y lo 
+                            centre verticalmente*/
+    color: seashell;
+    border-bottom: 3px dashed whitesmoke;
+}
+nav{    
+    background: #331863;
+    height: 52px;
+    border-bottom: 3px dashed whitesmoke;
+}
+
+.limpiar{
+    clear: both;
+}
+/* Para logar que el contenido y la barra lateral se dividan en la pantalla se flotaran los elementos a la izquierda
+y luego se les dará una anchuara de 80 - 20 para que llenen el siguiente nivel*/
+#content{
+    float: left;
+    width: calc(80% - 15px);  /*Le resto el padding */
+    min-height: 400px;  /*Le estoy dando una altura mínima*/
+    background: lightgreen;
+    padding-left: 15px; /*Para separar contenido de barra con un margen interior*/
+    padding-top: 40px;
+}
+#content p{
+    color: rgb(125, 60, 14);
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+/*Para configuara el primer elemento puedo hacer: */
+.articulo:first-child{
+    border-top: 1px solid whitesmoke;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.articulo{
+    color: seashell; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 10px;
+}
+
+aside{
+    float: left;
+    width: calc(20% - 15px);  /*Le resto el padding */
+    min-height: 400px;  /*Le estoy dando una altura mínima*/
+    background: orange;
+    padding-left: 15px; /*Para separar contenido de barra con un margen interior*/
+    padding-top: 40px;
+    color: seashell;
+}
+
+footer{ 
+    background: black;   
+    color: lightblue;
+    height: 50px;
+    line-height: 35px;
+    border-bottom: 3px dashed whitesmoke; 
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+table{
+    margin: 0 auto; 
+    background-color: beige;
+    max-width: 100%;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+    font-family: Arial, sans-serif;
+    font-size:medium;
+}
+
+#menu ul li {
+    background-color: #331863;
+    float: left;  /* Los pone en formación seriada a la izquierda de la panatalla*/
+    list-style: none; /*Elimina los estilos por default*/
+    margin: 10px;  /*Para separar los elementos */
+    line-height: 15px;
+}
+
+#menu ul li a {
+    color: #ccc;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 10px 10px 20px;
+}
+
+#menu ul li a:hover {
+    background: #000;
+    border-left: 10px solid #98b0c2;
+    color: #fff;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}

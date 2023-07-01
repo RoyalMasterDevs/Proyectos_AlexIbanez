@@ -1,39 +1,70 @@
 <!DOCTYPE html>
-<html lang="en-mx"> 
+<html lang="es"> 
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Primer pagina de ejercicio</title> 
-</head>
+    <head>
+        <meta charset="UTF-8"> <!--Reconoce los textos en español -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Proyecto002_CSS/P001.css">
+        <title>Primer pagina de ejercicio HTML con CSS directo</title> 
+         <!-- Sección CSS directa, exiten tres tipos de definición
+            Por etiqueta = Se nombra directamente la etiqueta
+            Por id = Se pone #Nombre del id
+            Por clase = .Nombre clase 
+        <style>
+            body{    
+                background: lightblue; ;
+            }
+            #container{
 
-<body>
-    <header>
-        <div>
-            <img src="" alt="Logo">
+            }
+            .article{
+
+            }
+        </style>-->
+    </head>
+
+    <body>
+        <div id="container"> <!--Contendrá todo el cuerpo de la página -->
+            <header>
+                <h1>Página básica HTML</h1>  <!--Representa la sección de cabecera -->
+            </header>
+            
+            <nav id="menu">   <!-- Para definir un menú usaré nav, la cual define una barra de navegación-->
+                <ul>
+                    <li><a target="_self" href="./index2.html">HTML 5</a></i>
+                    <li><a target="_self" href="./tablas.html">Tablas</a></i>
+                    <li><a target="_self" href="./formulario.html">Formularios</a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/ROMAC.online/">Ir a ROMAC</a></li>
+                </ul>
+            </nav>
+            <!--Pongo este div para evitar que los elementos de abajo no suban al nav, y le doy atributos en el css-->
+            <div class="limpiar"></div>
+  
+            <section id="content"> <!-- Para definir la sección principal -->
+                <p>Está es la estructura base de este HTML</p>
+                <img src="../img/EstructuraHTML.png" alt="Estructura principal">
+            </section>
+
+            <aside> <!--También crea una caja pero semánticamente se refiere a una barra lateral -->
+                <h3>Aside</h3>
+                <br>
+                <article class="articulo"> <!--Para definir Articulos -->
+                    <h3>Bob</h3>
+                    <img width="100px" src="../img/SB.jpg" alt="Logo">
+                </article>
+                <article class="articulo"> <!--Para definir Articulos -->
+                    <h3>Perrito</h3>
+                    <img width = "150px" src="https://noticiasdeperros.com/img/2012/08/ewwies.jpg" alt="perritos 2">
+                </article>
+            </aside>
+
+            <div class="limpiar"></div>
+
+            <footer>
+                Alex Ibáñez Menú ® 2023
+            </footer>
         </div>
-        <nav>
-            <ul>
-                <li><a target="_self" href="./tablas.html">Tablas</a></i>
-                <li><a target="_self" href="./formulario.html">Formularios</a></li>
-                <li><a target="_blank" href="https://www.facebook.com/ROMAC.online/">Ir a ROMAC</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Imágenes</h1>
-        <p>Está es una imágen de un Perrito con ruta relativa</p>
-        <img src="perrito.jpg" alt="perrito">
-
-        <p>Está es una imágen de más perritos con ruta relativa</p>
-        <img src="perritos.jpg" alt="perritos">
-
-        <p>Perritos con Ruta absoluta</p>
-        <img src="https://noticiasdeperros.com/img/2012/08/ewwies.jpg" alt="perritos 2">
-
-    </main>
-</body>
+    </body>
 
 </html>
