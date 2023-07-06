@@ -1,0 +1,5 @@
+@for $iterador from 1 through 5{
+    .circle-#{selector}{
+        animation-name: nombre;
+    }
+}
